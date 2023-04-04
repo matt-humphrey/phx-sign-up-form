@@ -1,6 +1,8 @@
 defmodule SignUpWeb.PageController do
   use SignUpWeb, :controller
 
+  alias SignUp.User
+
   def index(conn, _params) do
     IO.inspect(conn.params)
     render(conn, "index.html")

@@ -1,4 +1,4 @@
-defmodule User do
+defmodule SignUp.User do
   @moduledoc """
   Documentation for `User`
 
