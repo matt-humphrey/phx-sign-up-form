@@ -1,0 +1,27 @@
+<section>
+  <article>
+    <%= form_for @conn, Routes.page_path(@conn, :submit), fn f -> %>
+      <label>
+        Name: <%= text_input f, :username %>
+      </label>
+
+      <label>
+        Password: <%= text_input f, :password %>
+      </label>
+
+      <label>
+        Age: <%= select f, :age, 18..100 %>
+      </label>
+
+      <label>
+        Birthdate: <%= date_input f, :date %>
+      </label>
+
+      <label>
+        Terms and Conditions: <%= checkbox f, :terms_and_conditions %>
+      </label>
+
+      <%= submit "Submit" %>
+    <% end %>
+  </article>
+</section>
